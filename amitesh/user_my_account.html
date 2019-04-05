@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Asset Tracker</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="user_home.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="https://www.w3schools.com/w3css/4/w3.css">
+</head>
+
+<body>
+    <nav class="temp">
+        <ul>
+            <li><img src="resources/sapient_logo.png">
+        </ul>
+    </nav>
+
+    <div class="w3-sidebar w3-blue-grey w3-bar-block side" style="width:25%">
+        <h3 class="w3-bar-item"><img src="resources/userimage.png"> Hello User</h3>
+        <a href="user_home.html" class="w3-bar-item w3-button"><b>Home</b></a>
+        <a href="#" class="w3-bar-item w3-button"><b>Devices</b></a>
+        <a href="#" class="w3-bar-item w3-button"><b>Notifications</b></a>
+        <a href="#" class="w3-bar-item w3-button"><b>My Account</b></a>
+        <a href="#" class="w3-bar-item w3-button"><b>Logout</b></a>
+    </div>
+    <div class="user_image">
+        <img src="resources/user_account_image.jpg">
+
+    </div>
+
+    <table class="user_info">
+        <tr>
+            <td>Name:</td>
+            <td>User 1</td>
+        </tr>
+        <tr>
+            <td>User ID:</td>
+            <td>14491</td>
+        </tr>
+        <tr>
+            <td>Credit Limit:</td>
+            <td> 100$</td>
+        </tr>
+        <tr>
+            <td>Credit Used:</td>
+            <td>20$</td>
+        </tr>
+        <tr>
+            <td>Credit Left:</td>
+            <td>80$</td>
+        </tr>
+        <tr>
+            <td rowspan="2" colspan="2"> <button id="change_password">Change Password</button></td>
+
+        </tr>
+    </table>
+
+    <div id="myModal" class="modal">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div>
+                <h3>Email Address
+            </div>
+            <form method="POST">
+            <input type="email" id="password_email" onblur="failure()" > <button type="button" id="email_address">Submit</button>
+            <label id="failure">
+                </label>
+            <h6>This address will be used to send the link to change the password</h6></input>
+            </form>
+        </div>
+
+    </div>
+
+
+
+
+
+
+    <script src="user_my_account.js"></script>
+</body>
+
+</html>
