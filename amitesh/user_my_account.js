@@ -1,27 +1,29 @@
 var modal = document.getElementById('myModal');
-
-// Get the button that opens the modal
 var btn = document.getElementById("change_password");
-
-// Get the <span> element that closes the modal
+var logout = document.getElementById("logout");
+var logout_modal = document.getElementById('logout_modal');
 var span = document.getElementsByClassName("close")[0];
-
 var submit = document.getElementById('email_address');
-
 var resetPasswordEmail = document.getElementById('password_email');
+var logout_yes = document.getElementById('logout_yes');
+var logout_no = document.getElementById('logout_no');
 
 var emailReg = /^(([^<>()\[\]\.,;:\s@\"]+(\.[^<>()\[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i;
-// When the user clicks the button, open the modal 
-btn.onclick = function() {
-  modal.style.display = "block";
+
+ btn.onclick = function() {
+   modal.style.display = "block";
+ }
+
+logout.onclick = function(){
+  logout_modal.style.display = "block";
 }
 
-// When the user clicks on <span> (x), close the modal
+
 span.onclick = function() {
   modal.style.display = "none";
 }
 
-// When the user clicks anywhere outside of the modal, close it
+
 window.onclick = function(event) {
   if (event.target == modal) {
     modal.style.display = "none";
@@ -41,3 +43,11 @@ submit.addEventListener('click', function() {
         failure();
     }
   });
+
+logout_yes.onclick = function(event){
+  window.location.href = 'Login.html';
+}
+
+logout_no.onclick = function(event){
+  logout_modal.style.display = "none";;
+}

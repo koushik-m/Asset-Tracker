@@ -11,11 +11,6 @@
 </head>
 
 <body>
-    <nav class="temp">
-        <ul>
-            <li><img src="resources/sapient_logo.png">
-        </ul>
-    </nav>
 
     <div class="w3-sidebar w3-blue-grey w3-bar-block side" style="width:25%">
         <h3 class="w3-bar-item"><img src="resources/userimage.png"> Hello User</h3>
@@ -23,40 +18,42 @@
         <a href="#" class="w3-bar-item w3-button"><b>Devices</b></a>
         <a href="#" class="w3-bar-item w3-button"><b>Notifications</b></a>
         <a href="#" class="w3-bar-item w3-button"><b>My Account</b></a>
-        <a href="#" class="w3-bar-item w3-button"><b>Logout</b></a>
+        <button id="logout" class="w3-bar-item w3-button" data-target="#logout_modal"><b>Logout</b></button>
     </div>
-    <div class="user_image">
-        <img src="resources/user_account_image.jpg">
+    <div class="row">
+        <div class="user_image">
+            <img src="resources/user_account_image.jpg">
 
+        </div>
+
+        <table id="user_info">
+            <tr>
+                <td>Name:</td>
+                <td>User 1</td>
+            </tr>
+            <tr>
+                <td>User ID:</td>
+                <td>14491</td>
+            </tr>
+            <tr>
+                <td>Credit Limit:</td>
+                <td> 100$</td>
+            </tr>
+            <tr>
+                <td>Credit Used:</td>
+                <td>20$</td>
+            </tr>
+            <tr>
+                <td>Credit Left:</td>
+                <td>80$</td>
+            </tr>
+            <tr>
+                <td rowspan="2" colspan="2"> <button class="btn btn-primary" id="change_password"
+                        data-target="#myModal">Change Password</button></td>
+
+            </tr>
+        </table>
     </div>
-
-    <table class="user_info">
-        <tr>
-            <td>Name:</td>
-            <td>User 1</td>
-        </tr>
-        <tr>
-            <td>User ID:</td>
-            <td>14491</td>
-        </tr>
-        <tr>
-            <td>Credit Limit:</td>
-            <td> 100$</td>
-        </tr>
-        <tr>
-            <td>Credit Used:</td>
-            <td>20$</td>
-        </tr>
-        <tr>
-            <td>Credit Left:</td>
-            <td>80$</td>
-        </tr>
-        <tr>
-            <td rowspan="2" colspan="2"> <button id="change_password">Change Password</button></td>
-
-        </tr>
-    </table>
-
     <div id="myModal" class="modal">
 
         <!-- Modal content -->
@@ -66,11 +63,25 @@
                 <h3>Email Address
             </div>
             <form method="POST">
-            <input type="email" id="password_email" onblur="failure()" > <button type="button" id="email_address">Submit</button>
-            <label id="failure">
+                <input type="email" id="password_email" onblur="failure()"> <button class="btn btn-primary"
+                    id="email_address">Submit</button>
+                <label id="failure">
                 </label>
-            <h6>This address will be used to send the link to change the password</h6></input>
+                <h6>This address will be used to send the link to change the password</h6></input>
             </form>
+        </div>
+
+    </div>
+
+    <div id="logout_modal" class="modal">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+            <div>
+                <h3>Are you sure you want to logout?</h3>
+            </div>
+            <button class="btn btn-primary" id="logout_yes">Yes</button>
+            <button class="btn btn-primary" id="logout_no">No</button>
         </div>
 
     </div>
@@ -80,7 +91,10 @@
 
 
 
+
+
     <script src="user_my_account.js"></script>
+    <!-- <script src="table.js"></script> -->
 </body>
 
 </html>
