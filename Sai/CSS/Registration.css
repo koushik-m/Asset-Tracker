@@ -6,13 +6,29 @@ body {
   * {
     box-sizing: border-box;
   }
+  .container0{
+    float: left;
+    width: 50%;
+    height: 100%;
+    background-color: black;
+  }
+  .PSimage1{
+    position: absolute;
+    left: 5%;
+    top: 10%;
+    height: 50%;
+    width: 40%;
+  }
+  
   
   /* Add padding to containers */
   .container {
-    padding: 16px;
+    padding-left: 2%;
+    padding-top: 2%;
+    padding-right: 2%;
     background-color: white;
     width:50%;
-    margin-left: 25%;
+    margin-left: 50%;
   }
   
   /* Full-width input fields */
@@ -33,32 +49,51 @@ body {
   /* Overwrite default styles of hr */
   hr {
     border: 1px solid #f1f1f1;
-    margin-bottom: 25px;
+    margin-bottom: 1%;
+  }
+  h2 {
+       color:white;
+      font-family: 'open sans condensed';
+      font-size: 125%;
+      display: block;
+      background: #2a2a2a;
+      width: 100%;
+      
+      text-transform: uppercase;
+      padding: 2% 2% 2% 2%;
+      text-align: center;
+      box-shadow: inset 0px 1px 1px rgba(255, 255, 255, 0.050000000000000044);
+      border: 1px solid #1d1d1d;
+      font-weight: 200;
   }
   
   /* Set a style for the submit button */
   .registerbtn {
-    background-color: #4CAF50;
+    background-color:  #2a2a2a;
     color: white;
-    padding: 16px 20px;
-    margin: 8px 0;
+    padding: 2% 2%;
+    margin: 1%;
+    font-size: 100%;
     border: none;
     cursor: pointer;
+    opacity: 1;
     width: 100%;
-    opacity: 0.9;
   }
   
   .registerbtn:hover {
     opacity: 1;
+    background: #23cad5;
   }
   
   /* Add a blue text color to links */
   a {
-    color: dodgerblue;
+    color: #1ba0a9;
   }
   
   /* Set a grey background color and center the text of the "sign in" section */
   .signin {
-    background-color: #f1f1f1;
-    text-align: center;
+    padding-left: 32%;
+    padding-bottom: 1%;
+    
   }
+  
