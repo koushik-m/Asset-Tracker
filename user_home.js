@@ -1,19 +1,14 @@
-var slideIndex = 0;
-showSlides();
+var logout = document.getElementById("logout");
+var logout_modal = document.getElementById('logout_modal');
+var logout_yes = document.getElementById('logout_yes');
+var logout_no = document.getElementById('logout_no');
+logout.onclick = function(){
+  logout_modal.style.display = "block";
+}
+logout_yes.onclick = function(event){
+  window.location.href = 'Login.html';
+}
 
-function showSlides() {
-  var i;
-  var slides = document.getElementsByClassName("mySlides");
-  var dots = document.getElementsByClassName("dot");
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";  
-  }
-  slideIndex++;
-  if (slideIndex > slides.length) {slideIndex = 1}    
-  for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex-1].style.display = "block";  
-  dots[slideIndex-1].className += " active";
-  setTimeout(showSlides, 2000); // Change image every 2 seconds
-}   
+logout_no.onclick = function(event){
+  logout_modal.style.display = "none";;
+}

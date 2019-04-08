@@ -22,10 +22,34 @@
     <a href="#" class="w3-bar-item w3-button"><b>Devices</b></a>
     <a href="#" class="w3-bar-item w3-button"><b>Notifications</b></a>
     <a href="#" class="w3-bar-item w3-button"><b>My Account</b></a>
-    <a href="#" class="w3-bar-item w3-button"><b>Logout</b></a>
+    <button type="button" id="logout" class="w3-bar-item w3-button" data-toggle="modal"
+      data-target="#exampleModalCenter2"><b>Logout</b></button>
+  </div>
+
+  <div class="modal" id="exampleModalCenter2" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLongTitle">Ipad Pro</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          Are you sure you want to logout?
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary">Yes</button>
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">No</button>
+        </div>
+      </div>
+    </div>
   </div>
   <div class="row" style="margin-left: 27%;">
-    <div id="current_devices"><h1>Current devices</h1></div>
+    <div id="current_devices">
+      <h1>Current devices</h1>
+    </div>
   </div>
   <div class="row" style="margin-left: 27%;">
 
@@ -76,7 +100,7 @@
         <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
           Extend
         </button>
-        <button type="button" class="btn btn-primary" data-toggle="modal"data-target="#exampleModalCenter1">
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter1">
           Return
         </button>
       </div>
@@ -102,7 +126,10 @@
     </div>
   </div>
   <div class="row" style="margin-left: 27%;">
-    <div id="requested_devices"><h1>Requested devices</h1></Current></div>
+    <div id="requested_devices">
+      <h1>Requested devices</h1>
+      </Current>
+    </div>
   </div>
   <div class="row" style="margin-left: 27%;">
 
@@ -115,10 +142,10 @@
         <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter1">
           Cancel request
         </button>
- 
+
         <!-- Modal -->
-        <div class="modal" id="exampleModalCenter1" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
-          aria-hidden="true">
+        <div class="modal" id="exampleModalCenter1" tabindex="-1" role="dialog"
+          aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
           <div class="modal-dialog modal-dialog-centered" role="document">
             <div class="modal-content">
               <div class="modal-header">
@@ -165,10 +192,33 @@
         </button>
         <!-- Modal -->
 
-              
+
       </div>
     </div>
   </div>
+
+  <div class="modal" id="exampleModalCenter2" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLongTitle">Ipad Pro</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          Are you sure?
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary">Yes</button>
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">No</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- <script src="user_home.js"></script> -->
+
 </body>
 
 </html>
