@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Asset Tracker</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="user_home.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="https://www.w3schools.com/w3css/4/w3.css">
+</head>
+
+<body>
+
+    <div class="w3-sidebar w3-blue-grey w3-bar-block side" style="width:25%">
+        <h3 class="w3-bar-item"><img src="resources/userimage.png"> Hello User</h3>
+        <a href="user_home.html" class="w3-bar-item w3-button"><b>Home</b></a>
+        <a href="user_devices.html" class="w3-bar-item w3-button"><b>Devices</b></a>
+        <a href="#" class="w3-bar-item w3-button"><b>Notifications</b></a>
+        <a href="#" class="w3-bar-item w3-button"><b>My Account</b></a>
+        <button id="logout" class="w3-bar-item w3-button" data-target="#logout_modal"><b>Logout</b></button>
+    </div>
+
+    <div class="row">
+        <div class="user_image">
+            <img src="resources/user_account_image.jpg">
+
+        </div>
+
+        <table id="user_info">
+            <tr>
+                <td>Name:</td>
+                <td>User 1</td>
+            </tr>
+            <tr>
+                <td>User ID:</td>
+                <td>14491</td>
+            </tr>
+            <tr>
+                <td>Credit Limit:</td>
+                <td> 100$</td>
+            </tr>
+            <tr>
+                <td>Credit Used:</td>
+                <td>20$</td>
+            </tr>
+            <tr>
+                <td>Credit Left:</td>
+                <td>80$</td>
+            </tr>
+            <tr>
+                <td rowspan="2" colspan="2"> <button class="btn btn-primary" id="change_password"
+                        data-target="#myModal">Change Password</button></td>
+
+            </tr>
+        </table>
+    </div>
+    <div id="myModal" class="modal">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div>
+                <h3>Email Address
+            </div>
+            <form method="POST">
+                <input type="email" id="password_email" onblur="failure()"> <button class="btn btn-primary"
+                    id="email_address">Submit</button>
+                <label id="failure">
+                </label>
+                <h6>This address will be used to send the link to change the password</h6></input>
+            </form>
+        </div>
+
+    </div>
+
+    <div id="logout_modal" class="modal">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+            <div>
+                <h3>Are you sure you want to logout?</h3>
+            </div>
+            <button class="btn btn-primary" id="logout_yes">Yes</button>
+            <button class="btn btn-primary" id="logout_no">No</button>
+        </div>
+
+    </div>
+
+
+
+
+
+
+
+
+    <script src="user_my_account.js"></script>
+    <!-- <script src="table.js"></script> -->
+</body>
+
+</html>
