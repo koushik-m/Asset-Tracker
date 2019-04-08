@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title>Page Title</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" type="text/css" media="screen" href="user_home.css">
+  <link rel="stylesheet" type="text/css" media="screen" href="user_devices.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" type="text/css" media="screen" href="https://www.w3schools.com/w3css/4/w3.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
@@ -20,7 +20,7 @@
 
 
 
-  <div class="w3-sidebar w3-blue-grey w3-bar-block side" style="width:25%;">
+  <div class="w3-sidebar w3-blue-grey w3-bar-block" style="width:25%;">
     <h3 class="w3-bar-item"><img src="resources/userimage.png"> Hello User</h3>
     <a href="#" class="w3-bar-item w3-button"><b>Home</b></a>
     <a href="#" class="w3-bar-item w3-button"><b>Devices</b></a>
@@ -30,8 +30,29 @@
   </div>
   
   <div id="row" style="margin-left: 27%;">
-  <input type="search" ng-model="search" class="form-control input-lg" style="margin-top: 5%; margin-right: 9%;" id="search" placeholder="Type your search character">
+
+    <div id="column1">
+            <input type="search" ng-model="search" class="form-control input-lg" style="margin-top: 5%; margin-right: 18%;" id="search" placeholder="Type your search character">
+    </div>
+    <div id="column2">
+    <div class="dropdown" style="margin-left: 85%;">
+        
+        <button onclick="myFunction()" class="dropbtn">Filter</button>
+
+        <div id="myDropdown" class="dropdown-content">
+          <input type="text" placeholder="Search.." id="myInput" onkeyup="filterFunction()">
+          <a href="#brand">Brand</a>
+          <a href="#name">Device Name</a>
+          <a href="#os">OS</a>
+          
+        </div>
+
+      </div>
+    </div>
   
+      
+
+
   </div>
 
 
@@ -373,6 +394,29 @@
        }
    }
    */
+
+   /* When the user clicks on the button,
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+function filterFunction() {
+  var input, filter, ul, li, a, i;
+  input = document.getElementById("myInput");
+  filter = input.value.toUpperCase();
+  div = document.getElementById("myDropdown");
+  a = div.getElementsByTagName("a");
+  for (i = 0; i < a.length; i++) {
+    txtValue = a[i].textContent || a[i].innerText;
+    if (txtValue.toUpperCase().indexOf(filter) > -1) {
+      a[i].style.display = "";
+    } else {
+      a[i].style.display = "none";
+    }
+  }
+}
+
   </script>
 </body>
 
