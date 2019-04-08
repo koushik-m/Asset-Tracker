@@ -2,34 +2,173 @@
 <html>
 
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Page Title</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="user_home.css">
-    <link rel="stylesheet" type="text/css" media="screen" href="https://www.w3schools.com/w3css/4/w3.css">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Page Title</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" media="screen" href="user_home_utkarsh.css">
+  <link rel="stylesheet" type="text/css" media="screen" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" media="screen" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 </head>
 
 <body>
-    <nav class="temp">
-        <ul>
-            <li><img src="resources/sapient_logo.png">
-        </ul>
-    </nav>
-    <div class="w3-sidebar w3-blue-grey w3-bar-block side" style="width:25%">
-        <h3 class="w3-bar-item"><img src="resources/userimage.png"> Hello User</h3>
-        <a href="#" class="w3-bar-item w3-button"><b>Home</b></a>
-        <a href="#" class="w3-bar-item w3-button"><b>Devices</b></a>
-        <a href="#" class="w3-bar-item w3-button"><b>Notifications</b></a>
-        <a href="#" class="w3-bar-item w3-button"><b>My Account</b></a>
-        <a href="#" class="w3-bar-item w3-button"><b>Logout</b></a>
+  <div class="w3-sidebar w3-blue-grey w3-bar-block side" style="width:25%">
+    <h3 class="w3-bar-item"><img src="resources/userimage.png"> Hello User</h3>
+    <a href="#" class="w3-bar-item w3-button"><b>Home</b></a>
+    <a href="#" class="w3-bar-item w3-button"><b>Devices</b></a>
+    <a href="#" class="w3-bar-item w3-button"><b>Notifications</b></a>
+    <a href="#" class="w3-bar-item w3-button"><b>My Account</b></a>
+    <a href="#" class="w3-bar-item w3-button"><b>Logout</b></a>
+  </div>
+  <div class="row" style="margin-left: 27%;">
+    <div id="current_devices"><h1>Current devices</h1></div>
+  </div>
+  <div class="row" style="margin-left: 27%;">
+
+    <div class="card">
+      <img class="imgr" src="resources/item3.jpeg" alt="Avatar" style="width:100%; ">
+      <div class="container">
+        <h4>Ipad Pro</h4>
+        <p>Apple</p>
+
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
+          Extend
+        </button>
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter1">
+          Return
+        </button>
+        <!-- Modal -->
+        <div class="modal" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+          aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLongTitle">Ipad Pro</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                Enter the extension period in days
+              </div>
+              <input type="number">
+              <div class="modal-footer">
+                <button type="button" class="btn btn-primary">Submit</button>
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
 
 
+    <div class="card">
+      <img class="imgr" src="resources/sapient.png" alt="Avatar" style="width:100%; ">
+      <div class="container">
+        <h4>Ipad Pro</h4>
+        <p>Apple</p>
 
-    
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
+          Extend
+        </button>
+        <button type="button" class="btn btn-primary" data-toggle="modal"data-target="#exampleModalCenter1">
+          Return
+        </button>
+      </div>
+    </div>
 
-    <script src="user_home.js"></script>
+    <div class="card">
+      <img class="imgr" src="resources/sapient.png" alt="Avatar" style="width:100%;">
+      <div class="container">
+        <h4>Ipad Pro</h4>
+        <p>Apple</p>
+
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
+          Extend
+        </button>
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter1">
+          Return
+        </button>
+        <!-- Modal -->
+        <div class="modal" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+          aria-hidden="true">
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row" style="margin-left: 27%;">
+    <div id="requested_devices"><h1>Requested devices</h1></Current></div>
+  </div>
+  <div class="row" style="margin-left: 27%;">
+
+    <div class="card">
+      <img class="imgr" src="resources/item3.jpeg" alt="Avatar" style="width:100%; ">
+      <div class="container">
+        <h4>Ipad Pro</h4>
+        <p>Apple</p>
+
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter1">
+          Cancel request
+        </button>
+ 
+        <!-- Modal -->
+        <div class="modal" id="exampleModalCenter1" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+          aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLongTitle">Ipad Pro</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                Are you sure?
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-primary">Yes</button>
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">No</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="card">
+      <img class="imgr" src="resources/sapient.png" alt="Avatar" style="width:100%; ">
+      <div class="container">
+        <h4>Ipad Pro</h4>
+        <p>Apple</p>
+
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter1">
+          Cancel request
+        </button>
+        <!-- Modal -->
+      </div>
+    </div>
+
+    <div class="card">
+      <img class="imgr" src="resources/sapient.png" alt="Avatar" style="width:100%;">
+      <div class="container">
+        <h4>Ipad Pro</h4>
+        <p>Apple</p>
+
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter1">
+          Cancel request
+        </button>
+        <!-- Modal -->
+
+              
+      </div>
+    </div>
+  </div>
 </body>
 
 </html>
