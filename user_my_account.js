@@ -30,9 +30,7 @@ window.onclick = function(event) {
   }
 }
 
-function failure(){
-    resetPasswordEmail.defaultValue= "Enter a valid password";
-}
+
 
 submit.addEventListener('click', function() {
     console.log(resetPasswordEmail.value);
@@ -40,7 +38,7 @@ submit.addEventListener('click', function() {
         modal.style.display = "none";
     }
     else{
-        failure();
+        alert('Please enter a valid email ');
     }
   });
 
