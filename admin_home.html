@@ -9,43 +9,57 @@
     <link rel="stylesheet" type="text/css" media="screen" href="admin_home.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" media="screen" href="https://www.w3schools.com/w3css/4/w3.css">
-    <head>
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Material+Icons">
-        <link rel="stylesheet" href="https://unpkg.com/bootstrap-material-design@4.1.1/dist/css/bootstrap-material-design.min.css" integrity="sha384-wXznGJNEXNG1NFsbm0ugrLFMQPWswR3lds2VeinahP8N0zJw9VWSopbjv2x7WCvX" crossorigin="anonymous">
-        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" rel="stylesheet">
-        <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:400,700|Material+Icons">
-    </head>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Material+Icons">
+    <!-- <link rel="stylesheet"
+        href="https://unpkg.com/bootstrap-material-design@4.1.1/dist/css/bootstrap-material-design.min.css"
+        integrity="sha384-wXznGJNEXNG1NFsbm0ugrLFMQPWswR3lds2VeinahP8N0zJw9VWSopbjv2x7WCvX" crossorigin="anonymous"> -->
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css"
+        href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:400,700|Material+Icons">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 </head>
 
 <body>
-    
+
     <div class="w3-sidebar w3-blue-grey w3-bar-block side " style="width:25%;">
-        <h3 class="w3-bar-item" ><img src="resources/userimage.png"> Hello Admin</h3>
+        <h3 class="w3-bar-item"><img src="resources/userimage.png"> Hello Admin</h3>
         <a href="./admin_home.html" class="w3-bar-item w3-button"><b>Home</b></a>
         <a href="./admin_devices.html" class="w3-bar-item w3-button"><b>Devices</b></a>
 
         <button class="dropdown-btn w3-bar-item w3-button"><b>Inventory Management</b>
             <i class="fa fa-caret-down"></i>
-          </button>
-          <div class="dropdown-container">
+        </button>
+        <div class="dropdown-container">
             <a href="#" class="w3-bar-item w3-button">Add</a>
             <a href="#" class="w3-bar-item w3-button">Modify</a>
             <a href="#" class="w3-bar-item w3-button">Delete</a>
-          </div>
+        </div>
 
-       
+
 
         <a href="./admin_notification.html" class="w3-bar-item w3-button"><b>Notifications</b></a>
         <a href="./admin_myaccount.html" class="w3-bar-item w3-button"><b>My Account</b></a>
-        <a href="#" class="w3-bar-item w3-button"><b>Logout</b></a>
+        <button type="button" id="logout" class="w3-bar-item w3-button" data-toggle="modal"
+            data-target=".bs-example-modal-sm"><b>Logout</b></button>
     </div>
-    
-      
+    <div class="modal bs-example-modal-sm" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-sm">
+          <div class="modal-content">
+            <div class="modal-header"><h4>Logout <i class="fa fa-lock"></i></h4></div>
+            <div class="modal-body"><i class="fa fa-question-circle"></i> Are you sure you want to log out?</div>
+            <div class="modal-footer"><a href="Login.html" class="btn btn-dark btn-block">Logout</a></div>
+          </div>
+        </div>
+      </div>
 
 
-    
 
-    <script src="admin_home.js"></script> 
+
+
+
+    <script src="admin_home.js"></script>
 
 </body>
 

@@ -123,3 +123,9 @@
   text-transform: uppercase;
 }
   
+#change_password{
+  height: fit-content;
+  position: absolute;
+  top: 95%;
+  left: 70%;
+}
