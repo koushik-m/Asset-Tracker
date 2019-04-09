@@ -129,7 +129,7 @@
   }
    .log-form .signup{
    display: inline;
-   margin-left: 29%;
+   float: right  !important;
    background:  #2a2a2a;
    border: 1px solid #1ba0a9;
    padding: 3% 10%;
