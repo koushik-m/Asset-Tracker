@@ -278,3 +278,7 @@ img {vertical-align: middle;}
     background-color:white;
 
   }
+
+  #hello{
+    display: inline;
+  }

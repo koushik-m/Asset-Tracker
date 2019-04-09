@@ -154,3 +154,7 @@ color: #212529;
     top: 95%;
     left: 45%
   }
+
+  #hello{
+    display: inline;
+  }
