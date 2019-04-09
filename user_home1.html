@@ -23,7 +23,7 @@
     <a href="user_notification.html" class="w3-bar-item w3-button"><b>Notifications</b></a>
     <a href="user_my_account.html" class="w3-bar-item w3-button"><b>My Account</b></a>
     <button type="button" id="logout" class="w3-bar-item w3-button" data-toggle="modal"
-      data-target="#exampleModalCenter2"><b>Logout</b></button>
+      data-target=".bs-example-modal-sm"><b>Logout</b></button>
   </div>
 
   <div class="modal" id="exampleModalCenter2" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
@@ -31,17 +31,31 @@
     <div class="modal-dialog modal-dialog-centered" role="document">
       <div class="modal-content">
         <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLongTitle">Ipad Pro</h5>
+          <h5 class="modal-title" id="exampleModalLongTitle">Are you sure you want to logout?</h5>
           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
             <span aria-hidden="true">&times;</span>
           </button>
         </div>
-        <div class="modal-body">
-          Are you sure you want to logout?
+        <div class="modal-footer">
+          <button type="button" class="btn btn-dark">Yes</button>
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">No</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal" id="exampleModalCenter4" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLongTitle">Your crime has been recorded and the admin has been
+            notified!!!</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
         </div>
         <div class="modal-footer">
-          <button type="button" class="btn btn-primary">Yes</button>
-          <button type="button" class="btn btn-secondary" data-dismiss="modal">No</button>
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
         </div>
       </div>
     </div>
@@ -59,11 +73,14 @@
         <h4>Ipad Pro</h4>
         <p>Apple</p>
 
-        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
+        <button type="button" class="btn btn-dark" data-toggle="modal" data-target="#exampleModalCenter">
           Extend
         </button>
-        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter1">
+        <button type="button" class="btn btn-dark" data-toggle="modal" data-target="#exampleModalCenter1">
           Return
+        </button>
+        <button type="button" class="btn btn-dark" data-toggle="modal" data-target="#exampleModalCenter4">
+          Lost
         </button>
         <!-- Modal -->
         <div class="modal" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
@@ -81,7 +98,7 @@
               </div>
               <input type="number">
               <div class="modal-footer">
-                <button type="button" class="btn btn-primary">Submit</button>
+                <button type="button" class="btn btn-dark">Submit</button>
                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
               </div>
             </div>
@@ -97,11 +114,14 @@
         <h4>Ipad Pro</h4>
         <p>Apple</p>
 
-        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
+        <button type="button" class="btn btn-dark" data-toggle="modal" data-target="#exampleModalCenter">
           Extend
         </button>
-        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter1">
+        <button type="button" class="btn btn-dark" data-toggle="modal" data-target="#exampleModalCenter1">
           Return
+        </button>
+        <button type="button" class="btn btn-dark" data-toggle="modal" data-target="#exampleModalCenter4">
+          Lost
         </button>
       </div>
     </div>
@@ -112,11 +132,14 @@
         <h4>Ipad Pro</h4>
         <p>Apple</p>
 
-        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
+        <button type="button" class="btn btn-dark" data-toggle="modal" data-target="#exampleModalCenter">
           Extend
         </button>
-        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter1">
+        <button type="button" class="btn btn-dark" data-toggle="modal" data-target="#exampleModalCenter1">
           Return
+        </button>
+        <button type="button" class="btn btn-dark" data-toggle="modal" data-target="#exampleModalCenter4">
+          Lost
         </button>
         <!-- Modal -->
         <div class="modal" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
@@ -139,7 +162,7 @@
         <h4>Ipad Pro</h4>
         <p>Apple</p>
 
-        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter1">
+        <button type="button" class="btn btn-dark" data-toggle="modal" data-target="#exampleModalCenter1">
           Cancel request
         </button>
 
@@ -158,7 +181,7 @@
                 Are you sure?
               </div>
               <div class="modal-footer">
-                <button type="button" class="btn btn-primary">Yes</button>
+                <button type="button" class="btn btn-dark">Yes</button>
                 <button type="button" class="btn btn-secondary" data-dismiss="modal">No</button>
               </div>
             </div>
@@ -174,7 +197,7 @@
         <h4>Ipad Pro</h4>
         <p>Apple</p>
 
-        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter1">
+        <button type="button" class="btn btn-dark" data-toggle="modal" data-target="#exampleModalCenter1">
           Cancel request
         </button>
         <!-- Modal -->
@@ -187,7 +210,7 @@
         <h4>Ipad Pro</h4>
         <p>Apple</p>
 
-        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter1">
+        <button type="button" class="btn btn-dark" data-toggle="modal" data-target="#exampleModalCenter1">
           Cancel request
         </button>
         <!-- Modal -->
@@ -197,27 +220,17 @@
     </div>
   </div>
 
-  <div class="modal" id="exampleModalCenter2" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
-    aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered" role="document">
+ 
+
+  <div class="modal bs-example-modal-sm" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-sm">
       <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLongTitle">Ipad Pro</h5>
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-          </button>
-        </div>
-        <div class="modal-body">
-          Are you sure?
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-primary">Yes</button>
-          <button type="button" class="btn btn-secondary" data-dismiss="modal">No</button>
-        </div>
+        <div class="modal-header"><h4>Logout <i class="fa fa-lock"></i></h4></div>
+        <div class="modal-body"><i class="fa fa-question-circle"></i> Are you sure you want to log out?</div>
+        <div class="modal-footer"><a href="Login.html" class="btn btn-dark btn-block">Logout</a></div>
       </div>
     </div>
   </div>
-  <!-- <script src="user_home.js"></script> -->
 
 </body>
 
