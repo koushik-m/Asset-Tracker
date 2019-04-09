@@ -2,59 +2,61 @@
 <html>
 
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Page Title</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="admin_home.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" type="text/css" media="screen" href="https://www.w3schools.com/w3css/4/w3.css">
-    <head>
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Material+Icons">
-        <link rel="stylesheet" href="https://unpkg.com/bootstrap-material-design@4.1.1/dist/css/bootstrap-material-design.min.css" integrity="sha384-wXznGJNEXNG1NFsbm0ugrLFMQPWswR3lds2VeinahP8N0zJw9VWSopbjv2x7WCvX" crossorigin="anonymous">
-        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" rel="stylesheet">
-        <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:400,700|Material+Icons">
-    </head>
-    <link rel="stylesheet" type="text/css" media="screen" href="user_devices.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-  
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Page Title</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" media="screen" href="admin_home.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" media="screen" href="https://www.w3schools.com/w3css/4/w3.css">
+
+  <head>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Material+Icons">
+    <!-- <link rel="stylesheet"
+      href="https://unpkg.com/bootstrap-material-design@4.1.1/dist/css/bootstrap-material-design.min.css"
+      integrity="sha384-wXznGJNEXNG1NFsbm0ugrLFMQPWswR3lds2VeinahP8N0zJw9VWSopbjv2x7WCvX" crossorigin="anonymous"> -->
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css"
+      href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:400,700|Material+Icons">
   </head>
+  <link rel="stylesheet" type="text/css" media="screen" href="user_devices.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+</head>
 
 <body>
-    
-    <div class="w3-sidebar w3-blue-grey w3-bar-block side " style="width:25%;">
-        <h3 class="w3-bar-item" ><img src="resources/userimage.png"> Hello Admin</h3>
-        <a href="./admin_home.html" class="w3-bar-item w3-button"><b>Home</b></a>
-        <a href="./admin_devices.html" class="w3-bar-item w3-button"><b>Devices</b></a>
 
-        <button class="dropdown-btn w3-bar-item w3-button"><b>Inventory Management</b>
-            <i class="fa fa-caret-down"></i>
-          </button>
-          <div class="dropdown-container">
-            <a href="#" class="w3-bar-item w3-button">Add</a>
-            <a href="#" class="w3-bar-item w3-button">Modify</a>
-            <a href="#" class="w3-bar-item w3-button">Delete</a>
-          </div>
+  <div class="w3-sidebar w3-blue-grey w3-bar-block side " style="width:25%;">
+    <h3 class="w3-bar-item"><img src="resources/userimage.png"> Hello Admin</h3>
+    <a href="./admin_home.html" class="w3-bar-item w3-button"><b>Home</b></a>
+    <a href="./admin_devices.html" class="w3-bar-item w3-button"><b>Devices</b></a>
+
+    <button class="dropdown-btn w3-bar-item w3-button"><b>Inventory Management</b>
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-container">
+      <a href="#" class="w3-bar-item w3-button">Add</a>
+      <a href="#" class="w3-bar-item w3-button">Modify</a>
+      <a href="#" class="w3-bar-item w3-button">Delete</a>
+    </div>
 
 
-        <a href="./admin_notification.html" class="w3-bar-item w3-button"><b>Notifications</b></a>
-        <a href="admin_myaccount.html" class="w3-bar-item w3-button"><b>My Account</b></a>
-        <button type="button" id="logout" class="w3-bar-item w3-button" data-toggle="modal" data-target="#exampleModalCenter2"><b>Logout</b></button>
-      </div>
-      <div class="modal" id="exampleModalCenter2" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+    <a href="./admin_notification.html" class="w3-bar-item w3-button"><b>Notifications</b></a>
+    <a href="admin_myaccount.html" class="w3-bar-item w3-button"><b>My Account</b></a>
+    <button type="button" id="logout" class="w3-bar-item w3-button" data-toggle="modal"
+      data-target="#exampleModalCenter2"><b>Logout</b></button>
+  </div>
+  <div class="modal" id="exampleModalCenter2" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
     aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered" role="document">
       <div class="modal-content">
         <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLongTitle">Ipad Pro</h5>
+          <h5 class="modal-title" id="exampleModalLongTitle">Are you sure you want to logout?</h5>
           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
             <span aria-hidden="true">&times;</span>
           </button>
-        </div>
-        <div class="modal-body">
-          Are you sure you want to logout?
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-primary">Yes</button>
@@ -63,265 +65,267 @@
       </div>
     </div>
   </div>
-    <div id="row" style="margin-left: 27%;">
+  <div id="row" style="margin-left: 27%;">
 
-        <div id="column1">
-                <input type="search" ng-model="search" class="form-control input-lg" style="margin-top: 5%; width: 100%" id="search" placeholder="Type your search character">
+    <div id="column1">
+      <input type="search" ng-model="search" class="form-control input-lg" style="margin-top: 5%; width: 100%"
+        id="search" placeholder="Type your search character">
+    </div>
+    <div id="column2">
+      <div class="dropdown" style="margin-left: 85%;">
+
+        <button onclick="myFunction()" class="dropbtn">Filter</button>
+
+        <div id="myDropdown" class="dropdown-content">
+          <input type="text" placeholder="Search.." id="myInput" onkeyup="filterFunction()">
+          <a href="#brand">Brand</a>
+          <a href="#name">Device Name</a>
+          <a href="#os">OS</a>
+
         </div>
-        <div id="column2">
-        <div class="dropdown" style="margin-left: 85%;">
-            
-            <button onclick="myFunction()" class="dropbtn">Filter</button>
-    
-            <div id="myDropdown" class="dropdown-content">
-              <input type="text" placeholder="Search.." id="myInput" onkeyup="filterFunction()">
-              <a href="#brand">Brand</a>
-              <a href="#name">Device Name</a>
-              <a href="#os">OS</a>
-              
-            </div>
-    
-          </div>
-        </div>
-      
-          
-    
-    
+
       </div>
-    
-      <div id="row" style="margin-left: 27%;">
-          <div id="card">
-            <img src="resources/sapient.png" alt="Avatar" style="width:100%">
-            <div class="container">
-              <h4>Ipad Pro</h4>
-              <p>Apple</p>
-      
-              <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
-                Details
-              </button>
-      
-              <!-- Modal -->
-              <div class="modal" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
-                aria-hidden="true">
-                <div class="modal-dialog modal-dialog-centered" role="document">
-                  <div class="modal-content">
-                    <div class="modal-header">
-                      <h5 class="modal-title" id="exampleModalLongTitle">Ipad Pro</h5>
-                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                      </button>
-                    </div>
-                    <div class="modal-body">
-                      Latest Ipad from Apple
-                    </div>
-                    <div class="modal-footer">
-                      <button type="button" class="btn btn-primary">Request</button>
-                      <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                    </div>
-                  </div>
-                </div>
+    </div>
+
+
+
+
+  </div>
+
+  <div id="row" style="margin-left: 27%;">
+    <div id="card">
+      <img src="resources/sapient.png" alt="Avatar" style="width:100%">
+      <div class="container">
+        <h4>Ipad Pro</h4>
+        <p>Apple</p>
+
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
+          Details
+        </button>
+
+        <!-- Modal -->
+        <div class="modal" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+          aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLongTitle">Ipad Pro</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
               </div>
-            </div>
-          </div>
-      
-          <div id="card">
-            <img src="resources/sapient.png" alt="Avatar" style="width:100%">
-            <div class="container">
-              <h4>Ipad Pro</h4>
-              <p>Apple</p>
-      
-              <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
-                Details
-              </button>
-      
-              <!-- Modal -->
-              <div class="modal" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
-                aria-hidden="true">
-                <div class="modal-dialog modal-dialog-centered" role="document">
-                  <div class="modal-content">
-                    <div class="modal-header">
-                      <h5 class="modal-title" id="exampleModalLongTitle">Ipad Pro</h5>
-                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                      </button>
-                    </div>
-                    <div class="modal-body">
-                      Latest Ipad from Apple
-                    </div>
-                    <div class="modal-footer">
-                      <button type="button" class="btn btn-primary">Request</button>
-                      <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                    </div>
-                  </div>
-                </div>
+              <div class="modal-body">
+                Latest Ipad from Apple
               </div>
-            </div>
-          </div>
-          <div id="card">
-            <img src="resources/sapient.png" alt="Avatar" style="width:100%">
-            <div class="container">
-              <h4>Ipad Pro</h4>
-              <p>Apple</p>
-      
-              <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
-                Details
-              </button>
-      
-              <!-- Modal -->
-              <div class="modal" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
-                aria-hidden="true">
-                <div class="modal-dialog modal-dialog-centered" role="document">
-                  <div class="modal-content">
-                    <div class="modal-header">
-                      <h5 class="modal-title" id="exampleModalLongTitle">Ipad Pro</h5>
-                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                      </button>
-                    </div>
-                    <div class="modal-body">
-                      Latest Ipad from Apple
-                    </div>
-                    <div class="modal-footer">
-                      <button type="button" class="btn btn-primary">Request</button>
-                      <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-      
-      
-      
-        </div>
-        <div id="row" style="margin-left: 27%; ">
-          <div id="card">
-            <img src="resources/sapient.png" alt="Avatar" style="width:100%">
-            <div class="container">
-              <h4>Ipad Pro</h4>
-              <p>Apple</p>
-      
-              <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
-                Details
-              </button>
-      
-              <!-- Modal -->
-              <div class="modal" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
-                aria-hidden="true">
-                <div class="modal-dialog modal-dialog-centered" role="document">
-                  <div class="modal-content">
-                    <div class="modal-header">
-                      <h5 class="modal-title" id="exampleModalLongTitle">Ipad Pro</h5>
-                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                      </button>
-                    </div>
-                    <div class="modal-body">
-                      Latest Ipad from Apple
-                    </div>
-                    <div class="modal-footer">
-                      <button type="button" class="btn btn-primary">Request</button>
-                      <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-      
-          <div id="card">
-            <img src="resources/sapient.png" alt="Avatar" style="width:100%">
-            <div class="container">
-              <h4>Ipad Pro</h4>
-              <p>Apple</p>
-      
-              <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
-                Details
-              </button>
-      
-              <!-- Modal -->
-              <div class="modal" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
-                aria-hidden="true">
-                <div class="modal-dialog modal-dialog-centered" role="document">
-                  <div class="modal-content">
-                    <div class="modal-header">
-                      <h5 class="modal-title" id="exampleModalLongTitle">Ipad Pro</h5>
-                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                      </button>
-                    </div>
-                    <div class="modal-body">
-                      Latest Ipad from Apple
-                    </div>
-                    <div class="modal-footer">
-                      <button type="button" class="btn btn-primary">Request</button>
-                      <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div id="card">
-            <img src="resources/sapient.png" alt="Avatar" style="width:100%">
-            <div class="container">
-              <h4>Ipad Pro</h4>
-              <p>Apple</p>
-      
-              <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
-                Details
-              </button>
-      
-              <!-- Modal -->
-              <div class="modal" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
-                aria-hidden="true">
-                <div class="modal-dialog modal-dialog-centered" role="document">
-                  <div class="modal-content">
-                    <div class="modal-header">
-                      <h5 class="modal-title" id="exampleModalLongTitle">Ipad Pro</h5>
-                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                      </button>
-                    </div>
-                    <div class="modal-body">
-                      Latest Ipad from Apple
-                    </div>
-                    <div class="modal-footer">
-                      <button type="button" class="btn btn-primary">Request</button>
-                      <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                    </div>
-                  </div>
-                </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-primary">Request</button>
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
               </div>
             </div>
           </div>
         </div>
+      </div>
+    </div>
+
+    <div id="card">
+      <img src="resources/sapient.png" alt="Avatar" style="width:100%">
+      <div class="container">
+        <h4>Ipad Pro</h4>
+        <p>Apple</p>
+
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
+          Details
+        </button>
+
+        <!-- Modal -->
+        <div class="modal" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+          aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLongTitle">Ipad Pro</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                Latest Ipad from Apple
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-primary">Request</button>
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="card">
+      <img src="resources/sapient.png" alt="Avatar" style="width:100%">
+      <div class="container">
+        <h4>Ipad Pro</h4>
+        <p>Apple</p>
+
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
+          Details
+        </button>
+
+        <!-- Modal -->
+        <div class="modal" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+          aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLongTitle">Ipad Pro</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                Latest Ipad from Apple
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-primary">Request</button>
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+  </div>
+  <div id="row" style="margin-left: 27%; ">
+    <div id="card">
+      <img src="resources/sapient.png" alt="Avatar" style="width:100%">
+      <div class="container">
+        <h4>Ipad Pro</h4>
+        <p>Apple</p>
+
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
+          Details
+        </button>
+
+        <!-- Modal -->
+        <div class="modal" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+          aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLongTitle">Ipad Pro</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                Latest Ipad from Apple
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-primary">Request</button>
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="card">
+      <img src="resources/sapient.png" alt="Avatar" style="width:100%">
+      <div class="container">
+        <h4>Ipad Pro</h4>
+        <p>Apple</p>
+
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
+          Details
+        </button>
+
+        <!-- Modal -->
+        <div class="modal" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+          aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLongTitle">Ipad Pro</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                Latest Ipad from Apple
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-primary">Request</button>
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="card">
+      <img src="resources/sapient.png" alt="Avatar" style="width:100%">
+      <div class="container">
+        <h4>Ipad Pro</h4>
+        <p>Apple</p>
+
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
+          Details
+        </button>
+
+        <!-- Modal -->
+        <div class="modal" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+          aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLongTitle">Ipad Pro</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                Latest Ipad from Apple
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-primary">Request</button>
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
 
 
   <script src="admin_home.js"></script>
 </body>
 <script>
-   
-function myFunction() {
-  document.getElementById("myDropdown").classList.toggle("show");
-}
 
-function filterFunction() {
-  var input, filter, ul, li, a, i;
-  input = document.getElementById("myInput");
-  filter = input.value.toUpperCase();
-  div = document.getElementById("myDropdown");
-  a = div.getElementsByTagName("a");
-  for (i = 0; i < a.length; i++) {
-    txtValue = a[i].textContent || a[i].innerText;
-    if (txtValue.toUpperCase().indexOf(filter) > -1) {
-      a[i].style.display = "";
-    } else {
-      a[i].style.display = "none";
+  function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+  }
+
+  function filterFunction() {
+    var input, filter, ul, li, a, i;
+    input = document.getElementById("myInput");
+    filter = input.value.toUpperCase();
+    div = document.getElementById("myDropdown");
+    a = div.getElementsByTagName("a");
+    for (i = 0; i < a.length; i++) {
+      txtValue = a[i].textContent || a[i].innerText;
+      if (txtValue.toUpperCase().indexOf(filter) > -1) {
+        a[i].style.display = "";
+      } else {
+        a[i].style.display = "none";
+      }
     }
   }
-}
 
-  </script>
+</script>
+
 </html>
