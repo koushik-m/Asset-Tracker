@@ -47,5 +47,5 @@ logout_yes.onclick = function(event){
 }
 
 logout_no.onclick = function(event){
-  logout_modal.style.display = "none";;
+  logout_modal.style.display = "none";
 }
