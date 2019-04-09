@@ -20,7 +20,9 @@ login.addEventListener('click', function () {
         }
     }
     if (flag == 0) {
-        alert('Incorrect Login details')
+        var wrong = document.getElementById('incorrect');
+        wrong.innerHTML = "*incorrect login details";
+        wrong.style.color = 'red';
     }
 });
 
